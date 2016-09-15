@@ -1,3 +1,3 @@
-exports.isPalindrome = function () {
-  return true;
+exports.isPalindrome = function (str) {
+  re = /[\W_]/g;
 };
