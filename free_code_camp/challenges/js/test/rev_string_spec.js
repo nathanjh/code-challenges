@@ -7,3 +7,10 @@ describe('reverseString', function () {
     expect(exportFunction.reverseString(str)).to.equal('olleh');
   });
 });
+
+describe('reverseString', function () {
+  it('it returns "htraE morf sgniteerG" for "Greetings from Earth"', function () {
+    var str = 'Greetings from Earth';
+    expect(exportFunction.reverseString(str)).to.equal('htraE morf sgniteerG');
+  });
+});
