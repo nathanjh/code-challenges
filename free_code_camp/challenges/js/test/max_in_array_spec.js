@@ -1,4 +1,4 @@
-var exportFunction = require('../max_in_array');
+var exportFunction = require('../max_in_array.js');
 var expect = require('chai').expect;
 
 describe('largestOf', function () {
