@@ -4,6 +4,7 @@ exports.largestOf = function (array) {
   var biggestArray = [];
   for (var i = 0; i < array.length; i++) {
     var max = Math.max(...array[i]);
+    //var max = Math.max.apply(null, array[i]);
     biggestArray.push(max);
   }
 
