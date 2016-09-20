@@ -18,3 +18,15 @@ describe('breakChocolate', function () {
     expect(exportFunction.breakChocolate(1, 3)).to.equal(2);
   });
 });
+
+describe('breakChocolate', function () {
+  it('it returns 2 for (3, 1)', function () {
+    expect(exportFunction.breakChocolate(3, 1)).to.equal(2);
+  });
+});
+
+describe('breakChocolate', function () {
+  it('it returns 0 for (3, 0)', function () {
+    expect(exportFunction.breakChocolate(3, 0)).to.equal(0);
+  });
+});

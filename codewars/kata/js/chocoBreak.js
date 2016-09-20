@@ -1,9 +1,7 @@
 exports.breakChocolate = function (n, m) {
-  var breaks = 0;
-  var dim = [n, m].sort(function (a, b) {
-    return a - b;
-  });
-
-  breaks += (dim[0] * (dim[0] - 1)) + (dim[1] - 1);
-  return breaks;
+  if (n < 1 || m < 1) {
+    return 0;
+  } else {
+    return ((m - 1) * n) + (n - 1);
+  }
 };
