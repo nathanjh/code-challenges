@@ -7,4 +7,9 @@ describe('chunkArrayInGroups', function () {
     expect(
       exportFunction.chunkArrayInGroups(array, 2)).to.deep.equal([["a", "b"], ["c", "d"]]);
   });
+
+  it('it returns [[0, 1, 2], [3, 4, 5], [6]] for array = [0, 1, 2, 3, 4, 5, 6], size = 3', function () {
+    var array = [0, 1, 2, 3, 4, 5, 6];
+    expect(exportFunction.chunkArrayInGroups(array, 3)).to.deep.equal([[0, 1, 2], [3, 4, 5], [6]]);
+  });
 });
