@@ -1,13 +1,12 @@
-exports.chunkArrayInGroups = function (arr, num) {
+exports.chunkArrayInGroups = function (arr, size) {
   var outerArray = [];
-  // var innerArray = [];
   var start = 0;
-  var end = num;
-  // var condition = arr.length % num === 0 ? num : num + 1;
-  for (var i = 0; i < num; i++) {
+  var end = size;
+  var times = arr.length / size;
+  for (var i = 0; i < times; i++) {
     outerArray.push(arr.slice(start, end));
-    start += num;
-    end += num;
+    start += size;
+    end += size;
   }
 
   return outerArray;
